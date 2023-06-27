@@ -10,27 +10,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <div id="container">
+    <div class="container">
 
-        <div id="header">
-            <div class="search">
-                <i class="fa-regular fa-magnifying-glass"></i>
-                <div class="search-bar"></div>
+        <div class="sidebar">
+
+            <div class="menu">
+                <div class="logo"><img src="./icons/view-dashboard.svg">Dashboard</div>
+
+                <ul>
+                    <li><img src="./icons/home.svg"> Home</li>
+                    <li><img src="./icons/card-account-details.svg">Profile</li>
+                    <li><img src="./icons/android-messages.svg">Messages</li>
+                    <li><img src="./icons/clock-outline.svg">History</li>
+                    <li><img src="./icons/note-multiple.svg">Tasks</li>
+                    <li><img src="./icons/account-group.svg">Communities</li>
+                </ul>
+                <ul>
+                    <li><img src="./icons/cog.svg">Settings</li>
+                    <li><img src="./icons/message-question.svg">Support</li>
+                    <li><img src="./icons/shield-check.svg">Privacy</li>
+                </ul>
             </div>
-            <div class="account">
-                <i class="fa-light fa-bell"></i>
-                <div class="profile-image small"></div>
-                <div class="personal-name small"></div>
+        </div>
+
+        <div class="header">
+
+            <div class="top-header">
+                <div class="search">
+                    <img src="./icons/magnify.svg">
+                    <span class="search-bar"><input type="search" name="project-search" id="project-search"></span>
+                </div>
+                <div class="account">
+                    <span><img src="./icons/bell-ring-outline.svg"></span>
+                    <span class="profile-image small-image"><img src="./images/cat.png" alt="a profile image"></span>
+                    <span class="personal-name small-name">Hamza Zamzami</span>
+                </div>
             </div>
+
+
             <div class="main-header">
                 <div class="account-info">
-                    <div class="profile-image large"></div>
-                    <div>Hi there, </div>
-                    <div class="personal-name large"></div>
+                    <span class="profile-image large-image"><img src="./images/cat.png" alt="a profile image"></span>
+                    <div>
+                        <div>Hi there, </div>
+                        <div class="personal-name large-name">Hamza Zamzami (@daruza)</div>
+                    </div>
                 </div>
                 <div class="header-buttons">
                     <button type="button">New</button>
@@ -38,167 +71,167 @@
                     <button type="button">Share</button>
                 </div>
             </div>
+
         </div>
 
-        <div id="sidebar">
-            <div class="logo">Dashboard</div>
-            <div class="menu">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
-        </div>
 
-        <div id="main">
 
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-title">Super Cool Project</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
+        <div class="main">
+            <div class="projects-section">
+                <div class="section-title">Your Projects</div>
+                <div class="project-cards-container">
+                    <div class="project-card">
+                        <div class="card-title">Super Cool Project</div>
+                        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            commodi
+                            odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
+                            assumenda!</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Less Cool Project</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
+                    <div class="project-card">
+                        <div class="card-title">Less Cool Project</div>
+                        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            commodi
+                            odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
+                            assumenda!</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Impossible App</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
+                    <div class="project-card">
+                        <div class="card-title">Impossible App</div>
+                        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            commodi
+                            odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
+                            assumenda!</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Easy Peasy App</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
+                    <div class="project-card">
+                        <div class="card-title">Easy Peasy App</div>
+                        <div class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fuga,
+                            illo, explicabo doloremque id pariatur, sint illum enim unde dolorem voluptatem maiores.
+                            Quam eum dolor asperiores sint, amet odit id modi. Molestias totam sunt praesentium sequi.
+                            Consequuntur consequatur fugit inventore.</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Ad Blocker</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
+                    <div class="project-card">
+                        <div class="card-title">Ad Blocker</div>
+                        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            commodi
+                            odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
+                            assumenda!</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Money Maker</div>
-                    <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere commodi
-                        odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
-                        assumenda!</div>
-                    <div class="card-buttons">
-                        <i class="fa-thin fa-star"></i>
-                        <i class="fa-thin fa-eye"></i>
-                        <i class="fa-thin fa-share-nodes fa-rotate-270"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="announcements">
-                <div>Announcements</div>
-                <div class="announcements-card">
-                    <div>
-                        <div class="announcements-title">Site Maintenance</div>
-                        <div class="announcements-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Inventore, saepe tempora expedita at delectus hic?</div>
-                    </div>
-                    <div>
-                        <div class="announcements-title">Community Share Day</div>
-                        <div class="announcements-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Inventore, saepe tempora expedita at delectus hic?</div>
-                    </div>
-                    <div>
-                        <div class="announcements-title">Updated Privacy Policy</div>
-                        <div class="announcements-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Inventore, saepe tempora expedita at delectus hic?</div>
+                    <div class="project-card">
+                        <div class="card-title">Money Maker</div>
+                        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            commodi
+                            odio architecto impedit maiores eaque nisi harum ratione! Animi vero, modi officiis ex fuga
+                            assumenda!</div>
+                        <div class="card-buttons">
+                            <img src="./icons/star-plus-outline.svg">
+                            <img src="./icons/eye-plus-outline.svg">
+                            <img src="./icons/source-branch.svg">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="trending">
-                <div>Trending</div>
-                <div class="trending-card">
-                    <div class="trending-profile">
-                        <div class="profile-image"></div>
-                        <div class="trending-info">
-                            <div class="profile-tag">
-                                @tegan
-                            </div>
-                            <div class="trending-project">
-                                World Peace Builder
-                            </div>
+
+            <div class="main-aside">
+                <div>
+                    <div class="section-title">Announcements</div>
+                    <div class="announcements-container">
+                        <div class="announcements-card">
+                            <div class="announcement-title">Site Maintenance</div>
+                            <div class="announcement-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Inventore, saepe tempora expedita at delectus hic?</div>
+                        </div>
+                        <div class="announcements-card">
+                            <div class="announcement-title">Community Share Day</div>
+                            <div class="announcement-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Inventore, saepe tempora expedita at delectus hic?</div>
+                        </div>
+                        <div class="announcements-card">
+                            <div class="announcement-title">Updated Privacy Policy</div>
+                            <div class="announcement-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Inventore, saepe tempora expedita at delectus hic?</div>
                         </div>
                     </div>
-                    <div class="trending-profile">
-                        <div class="profile-image"></div>
-                        <div class="trending-info">
-                            <div class="profile-tag">
-                                @morgan
+                </div>
+
+                <div>
+                    <div class="section-title">Trending</div>
+                    <div class="trending-container">
+                        <div class="trending-profile">
+                            <div class="profile-image small-image"><img src="./images/cat.png" alt="a profile image">
                             </div>
-                            <div class="trending-project">
-                                Super Cool Project
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trending-profile">
-                        <div class="profile-image"></div>
-                        <div class="trending-info">
-                            <div class="profile-tag">
-                                @kendall
-                            </div>
-                            <div class="trending-project">
-                                Life Changing App
+                            <div class="trending-info">
+                                <div class="profile-tag">
+                                    @tegan
+                                </div>
+                                <div class="trending-project">
+                                    World Peace Builder
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="trending-profile">
-                        <div class="profile-image"></div>
-                        <div class="trending-info">
-                            <div class="profile-tag">
-                                @alex
+                        <div class="trending-profile">
+                            <span class="profile-image small-image"><img src="./images/cat.png" alt="a profile image">
+                            </span>
+                            <div class="trending-info">
+                                <div class="profile-tag">
+                                    @morgan
+                                </div>
+                                <div class="trending-project">
+                                    Super Cool Project
+                                </div>
                             </div>
-                            <div class="trending-project">
-                                No Traffic Maker
+                        </div>
+                        <div class="trending-profile">
+                            <span class="profile-image small-image"><img src="./images/cat.png" alt="a profile image">
+                            </span>
+                            <div class="trending-info">
+                                <div class="profile-tag">
+                                    @kendall
+                                </div>
+                                <div class="trending-project">
+                                    Life Changing App
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trending-profile">
+                            <span class="profile-image small-image"><img src="./images/cat.png" alt="a profile image">
+                            </span>
+                            <div class="trending-info">
+                                <div class="profile-tag">
+                                    @alex
+                                </div>
+                                <div class="trending-project">
+                                    No Traffic Maker
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
